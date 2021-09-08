@@ -1,0 +1,216 @@
+* {
+    font-family: arial;
+}
+
+/* Home Page ---------------------------------*/
+
+.body-home {
+    background-image: url(IMG/beach-bckgrnd.jpg);
+    background-size: cover;
+}
+
+.header-home {
+    color: #b9b9b9;
+    text-align: center;
+    margin-top: 5%;
+    letter-spacing: 3px;
+    font-size: 225%;
+}
+
+.nav-home {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+/* Home Page Buttons */
+
+.btn-a:link,
+.btn-a:visited,
+.btn-b:link,
+.btn-b:visited {
+    -moz-text-stroke-color: #626262;
+    -webkit-text-stroke-color: #626262;
+    -moz-text-stroke-width: 4px;  
+    -webkit-text-stroke-width: 4px;
+}
+
+.btn-a:hover,
+.btn-a:active,
+.btn-b:hover,
+.btn-b:active {
+    -moz-text-fill-color: #EB3707;
+    -webkit-text-fill-color: #EB3707; 
+    transition: 0.2s;
+}
+
+.btn-a,
+.btn-b {
+    padding: -50%;
+    margin-top: -1%;
+    margin-bottom: 20%;
+    font-weight: 900;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+.btn-a {
+    font-size: 2000%;
+    margin-left: 20%;
+    -moz-text-fill-color: #364B82;
+    -webkit-text-fill-color: #364B82;
+}
+
+.btn-b {
+    font-size: 2000%;
+    margin-right: 25%;
+    -moz-text-fill-color: #136207;
+    -webkit-text-fill-color: #136207;
+}
+
+/* Home Page Footer */
+
+.footer-text {
+    text-align: center;
+}
+
+/* Alice's Page-Jack's Page Common ---------------------------*/
+
+.body-a {
+    background-color: #d2e1ef;
+}
+
+.header-a {
+    color: #959595;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 225%;
+}
+
+.nav-a {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 5%;
+}
+
+/* A & J's common page Buttons */
+
+.btn-home,
+.btn-jack,
+.btn-alice {
+    padding: -50%;
+    margin-top: -1%;
+    margin-bottom: 0%;
+    font-weight: 700;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+.btn-jack {
+    border: #136207 solid 6px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-alice {
+    border: #364B82 solid 6px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+.btn-jack:link,
+.btn-jack:visited {
+    color: #136207;
+    font-size: 340%;
+}  
+
+.btn-home:link,
+.btn-home:visited {
+    margin-top: 1%;
+    color: #959595;
+    font-size: 250%;
+}
+
+.btn-jack:hover,
+.btn-jack:active,
+.btn-home:hover,
+.btn-home:active {
+    color: #EB3707; 
+    transition: 0.2s;
+}
+
+.btn-alice:link,
+.btn-alice:visited {
+    color: #364B82;
+    font-size: 340%;
+}
+
+.btn-alice:hover,
+.btn-alice:active {
+    color: #EB3707; 
+    transition: 0.2s;
+}
+    
+
+/* A & J's common page gallery */
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+  }
+
+.gallery-images figure img {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #d2e1ef;
+  }
+
+
+figcaption {
+    text-align: center;
+}
+
+.gallery {
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: auto;
+    overflow: auto;
+}
+
+/* A & J's common page footer */
+
+.gallery-footer {
+    margin-top: 20%;
+    background-color: #656565;
+    height: 75px;
+    line-height: 75px;
+}
+
+/* Alice's Page -----------------------------------*/
+
+.j-text {
+    margin-left: 18px;
+}
+
+/* Jack's Page ------------------------------------*/
+
+.a-text {
+    margin-left: 15px;
+}
+
+
+    
