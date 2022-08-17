@@ -1,76 +1,168 @@
 @media only screen and (max-width: 1600px) {
-    .gallery { 
-        padding-left: 8%;
-    }
+  .gallery {
+    padding-left: 8%;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-    .gallery { 
-        padding-left: 0;
-        margin: 0 0 0 0;
-        width: 100%;
-    }
+  .gallery {
+    padding-left: 0;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
 }
-    
-    
-    
+
 /* Big tablets to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
-    
-    .gallery { 
-        padding-left: 15%;
-    }
-    
-    
-    
+  .gallery {
+    padding-left: 15%;
+  }
 }
 
 /* Small tablets to big tablets: from 975 to 1023px */
 @media only screen and (max-width: 1023px) {
-    .gallery { 
-        padding-left: 11%;
-    }
-    
-    
-}
-    
-/* Small tablets to big tablets: from 768 to 974px */
-@media only screen and (max-width: 974px) {
-    
-    .gallery { 
-        padding-left: 0;
-    }
-    
-    .gallery-images figure img {
-        margin: 0 1 1 0;
-        width: 250px;
-        height: 175px;
-    }
-    
-    
-    
-}
-    
-    
-/* Small phones to small tablets: from 481 to 767px */
-@media only screen and (max-width: 767px) {
-    
-    .gallery-images figure img {
-            margin: 10px;
-            padding-left: 35px;
-            width: 250px;
-            height: 175px;
-    }
-    
-    
-    
-    
+  .header-home {
+    width: 90%;
+    margin: 5% auto 0 auto;
+  }
+  .nav-home {
+    width: 65%;
+  }
+  .gallery {
+    padding-left: 11%;
+  }
 }
 
-    
+/* Small tablets to big tablets: from 768 to 974px */
+@media only screen and (max-width: 974px) {
+  .header-home {
+    font-size: 200%;
+  }
+  .gallery {
+    padding-left: 0;
+  }
+
+  .gallery-images figure img {
+    margin: 0 1 1 0;
+    width: 250px;
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .header-home {
+    font-size: 175%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .header-home {
+    font-size: 150%;
+    margin-top: 10%;
+    text-shadow: 1px 1px 5px rgb(81, 81, 85);
+  }
+  .nav-home {
+    margin-top: 8%;
+  }
+  .btn-a,
+  .btn-b {
+    font-size: 1700%;
+  }
+  .nav-home div span {
+    font-size: 90%;
+  }
+}
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+  .header-home {
+    font-size: 125%;
+    width: 80%;
+  }
+  .gallery-images figure img {
+    margin: 10px;
+    padding-left: 35px;
+    width: 250px;
+    height: 175px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .header-home {
+    width: 85%;
+  }
+  .nav-home {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  .header-home {
+    width: 90%;
+  }
+  .nav-home {
+    width: 70%;
+  }
+  .btn-a,
+  .btn-b {
+    font-size: 1500%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .header-home {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .nav-home {
+    width: 80%;
+  }
+}
+
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    
-    
-    
+  .header-home {
+    width: 85%;
+  }
+  .btn-a,
+  .btn-b {
+    font-size: 1200%;
+  }
+  .nav-home div span {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .nav-home {
+    margin-top: 10%;
+  }
+  .btn-a,
+  .btn-b {
+    font-size: 1000%;
+  }
+  .nav-home div:last-of-type {
+    margin-right: 0%;
+  }
+  .footer-text {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .header-home {
+    margin-top: 5%;
+  }
+  .nav-home {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-home div:last-of-type {
+    margin-top: 10%;
+    margin-right: 8%;
+  }
+  .nav-home div span {
+    opacity: 1;
+    color: rgb(39, 38, 38);
+    font-weight: 600;
+  }
+  .footer-text {
+    bottom: 2%;
+  }
 }

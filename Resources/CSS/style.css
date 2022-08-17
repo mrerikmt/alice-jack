@@ -1,26 +1,64 @@
 * {
-    font-family: arial;
+  font-family: arial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Home Page ---------------------------------*/
 
 .body-home {
-    background-image: url(IMG/beach-bckgrnd.jpg);
-    background-size: cover;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.43)),
+      to(hsla(0, 0%, 100%, 0))
+    ),
+    url(IMG/beach-bckgrnd.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.43),
+      hsla(0, 0%, 100%, 0)
+    ),
+    url(IMG/beach-bckgrnd.jpg);
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, fixed;
+  /* background-image: url(IMG/beach-bckgrnd.jpg); */
+  max-width: 100%;
+  overflow-y: scroll;
 }
 
 .header-home {
-    color: #b9b9b9;
-    text-align: center;
-    margin-top: 5%;
-    letter-spacing: 3px;
-    font-size: 225%;
+  color: #b9b9b9;
+  text-align: center;
+  margin-top: 5%;
+  letter-spacing: 3px;
+  font-size: 225%;
 }
 
 .nav-home {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto 0 auto;
+  width: 700px;
+}
+.nav-home div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-home div:last-of-type {
+  margin-right: 6%;
+}
+.nav-home div span {
+  color: #626262;
+  text-decoration: none;
+  font-size: 110%;
+  letter-spacing: 3px;
+  opacity: 0.5;
 }
 
 /* Home Page Buttons */
@@ -29,69 +67,74 @@
 .btn-a:visited,
 .btn-b:link,
 .btn-b:visited {
-    -moz-text-stroke-color: #626262;
-    -webkit-text-stroke-color: #626262;
-    -moz-text-stroke-width: 4px;  
-    -webkit-text-stroke-width: 4px;
+  -moz-text-stroke-color: #626262;
+  -webkit-text-stroke-color: #626262;
+  -moz-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 4px;
 }
 
 .btn-a:hover,
 .btn-a:active,
 .btn-b:hover,
 .btn-b:active {
-    -moz-text-fill-color: #EB3707;
-    -webkit-text-fill-color: #EB3707; 
-    transition: 0.2s;
+  -moz-text-fill-color: #eb3707;
+  -webkit-text-fill-color: #eb3707;
+  transition: 0.2s;
 }
 
 .btn-a,
 .btn-b {
-    padding: -50%;
-    margin-top: -1%;
-    margin-bottom: 20%;
-    font-weight: 900;
-    font-family: helvetica;
-    text-decoration: none;
+  font-weight: 900;
+  font-family: helvetica;
+  text-decoration: none;
+  line-height: 85%;
 }
 
 .btn-a {
-    font-size: 2000%;
-    margin-left: 20%;
-    -moz-text-fill-color: #364B82;
-    -webkit-text-fill-color: #364B82;
+  font-size: 2000%;
+  -moz-text-fill-color: #364b82;
+  -webkit-text-fill-color: #364b82;
 }
 
 .btn-b {
-    font-size: 2000%;
-    margin-right: 25%;
-    -moz-text-fill-color: #136207;
-    -webkit-text-fill-color: #136207;
+  font-size: 2000%;
+  /* margin-right: 25%; */
+  -moz-text-fill-color: #136207;
+  -webkit-text-fill-color: #136207;
+  margin-right: -6%;
 }
 
 /* Home Page Footer */
 
 .footer-text {
-    text-align: center;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 2%;
+  font-weight: 600;
 }
 
 /* Alice's Page-Jack's Page Common ---------------------------*/
 
 .body-a {
-    background-color: #d2e1ef;
+  background-color: #d2e1ef;
 }
 
 .header-a {
-    color: #959595;
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 225%;
+  color: #959595;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 225%;
+  /* margin-bottom: 3%; */
 }
 
 .nav-a {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 5%;
 }
 
 /* A & J's common page Buttons */
@@ -99,118 +142,149 @@
 .btn-home,
 .btn-jack,
 .btn-alice {
-    padding: -50%;
-    margin-top: -1%;
-    margin-bottom: 0%;
-    font-weight: 700;
-    font-family: helvetica;
-    text-decoration: none;
+  padding: -50%;
+  margin-top: -1%;
+  margin-bottom: 0%;
+  font-weight: 700;
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+.border-jack {
+  border: #136207 solid 6px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  text-align: center;
 }
 
 .btn-jack {
-    border: #136207 solid 6px;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  color: #136207;
+}
+
+.border-alice {
+  border: #364b82 solid 6px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  text-align: center;
 }
 
 .btn-alice {
-    border: #364B82 solid 6px;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  color: #364b82;
 }
-    
+
 .btn-jack:link,
 .btn-jack:visited {
-    color: #136207;
-    font-size: 340%;
-}  
+  color: #136207;
+  font-size: 340%;
+}
 
 .btn-home:link,
 .btn-home:visited {
-    margin-top: 1%;
-    color: #959595;
-    font-size: 250%;
+  margin-top: 1%;
+  color: #959595;
+  font-size: 250%;
 }
 
 .btn-jack:hover,
 .btn-jack:active,
 .btn-home:hover,
 .btn-home:active {
-    color: #EB3707; 
-    transition: 0.2s;
+  color: #eb3707;
+  transition: 0.2s;
 }
 
 .btn-alice:link,
 .btn-alice:visited {
-    color: #364B82;
-    font-size: 340%;
+  color: #364b82;
+  font-size: 340%;
 }
 
 .btn-alice:hover,
 .btn-alice:active {
-    color: #EB3707; 
-    transition: 0.2s;
+  color: #eb3707;
+  transition: 0.2s;
 }
-    
 
 /* A & J's common page gallery */
 
 .gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-    max-height: 100vh;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 5%;
+}
 
-.gallery-images figure img {
-    margin: 10px;
-    width: 300px;
-    height: 200px;
-    object-fit: contain;
-    background-color: #d2e1ef;
-  }
+figure {
+  margin: 0 auto 5% auto;
+  position: relative;
+}
 
+figure img {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  background-color: transparent;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  opacity: 0.9;
+}
+
+figure img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.75);
+  transform: scale(1.75);
+  z-index: 2;
+  position: relative;
+}
 
 figcaption {
-    text-align: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.bad-kitty {
+  transform: rotate(90deg);
 }
 
 .gallery {
-    width: 95%;
-    margin-right: 2.5%;
-    margin-left: auto;
-    overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 5%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
 
 /* A & J's common page footer */
 
 .gallery-footer {
-    margin-top: 20%;
-    background-color: #656565;
-    height: 75px;
-    line-height: 75px;
+  margin-top: 5%;
+  background-color: #656565;
+  height: 75px;
+  line-height: 75px;
+}
+.gallery-footer-text {
+  text-align: center;
+  position: relative;
 }
 
 /* Alice's Page -----------------------------------*/
 
 .j-text {
-    margin-left: 18px;
+  margin-left: 18px;
 }
 
 /* Jack's Page ------------------------------------*/
 
 .a-text {
-    margin-left: 15px;
+  margin-left: 15px;
 }
-
-
-    
